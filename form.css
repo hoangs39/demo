@@ -1,0 +1,23 @@
+/* reg form div */
+.registration-form{
+    background: #f7f7f7;
+    padding: 20px;
+    border: 1px solid orange;
+    margin: 50px 0px;
+  }
+  /* display error message */
+  .err-msg{
+    color:red;
+  }
+  .registration-form form{
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    background: #f3f3f3;
+    margin-bottom: 5px;
+  }
+  .registration-form section ul a{
+      color: black;
+  }
+  .registration-form .form-group{
+      margin-bottom: 10px;
+}

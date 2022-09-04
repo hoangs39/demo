@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px black solid; */
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* container */
+.container-fluid{
+    /* background-color: aqua; */
+}
+/* title */
+.container-fluid h2{
+    text-align: center;
+    margin: 0 auto 30px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.container-fluid h2::after{
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* img row */
+.container-fluid .row{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.container-fluid .row img{
+    display: block;
+    margin: 10px auto;
+    margin-top: 30px;
+    border: 1px black solid;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.container-fluid .row input, .container-fluid .row button{
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+.container-fluid .row input{
+    background-color: #fff;
+}
+
+/* detail table */
+.container-fluid table{
+    width: 80%;
+    margin: 5px auto;
+    margin-bottom: 8rem;
+    border-radius: 10px;
+}
+.container-fluid .row button{
+    background: #ff523b;
+    color: #fff;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+
+/* its button */
+.container-fluid .row .btn-danger a{
+    text-decoration: none;
+    color: #fff;
+}
+.container-fluid .row .btn-danger{
+    display: inline-block;
+    background: #ff523b;
+    padding: 8px 30px;
+    margin: 30px auto;
+    border-radius: 30px;
+    transition: 0.5s;
+    width:80%;
+}
+.container-fuild .row .btn-danger a:-webkit-any-link{
+    cursor: pointer;
+}

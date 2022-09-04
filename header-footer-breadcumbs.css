@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+section.header{
+    position: relative;
+    width: 100%;
+    height: 3vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+/* logo */
+header .logo{
+    position: relative;
+    /* add space */
+    margin-right: 5rem;
+    border: #333 solid;
+    max-width: 80px;
+}
+/* nav */
+header ul{
+    position: relative;
+    display: flex;
+    margin-left: 5rem;
+    /* border: 1px #333 solid; */
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+/* searching bar */
+header .searching-bar form{
+    display: flex;
+    border: #333 solid;
+}
+header .searching-bar input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 13px 19px;
+    letter-spacing: 0;
+    color: #212121;
+    border: none;
+    background: #eff0f5;
+    box-shadow: none;
+    border-radius: 2px;
+}
+header .searching-bar button{
+    width: 45px;
+    height: 40px;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    outline: none;
+    background-size: 22px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+/* breadcrumb */
+section.breadcrumb{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    display: block;
+}
+ul.breadcrumb li{
+    display: inline-block;
+    list-style: none;
+}
+ul.breadcrumb li a{
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+}
+ul.breadcrumb li+li:before {
+    color: black;
+    content: "\003e";
+}
+
+/* footer */
+section.footer{
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    padding: 50px;
+    margin: 6px auto;
+    margin-top: 2rem;
+}
+footer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+footer ul{
+    position: relative;
+    display: flex;
+    width: 50%;
+    margin: 5px auto;
+    height: 30%;
+    top: 30%;
+    border: #333 solid;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: larger;
+}
+/* media */
+@media (max-width: 980px) {
+    /* header */
+    section.header{
+        height: 15rem;
+        padding: 20px 20px 120px;
+    }
+    header{
+        padding: 60px;
+        display: block;
+    }
+    /* logo */
+    header a{
+        width: 60px;
+    }
+    header .logo{
+        width: 60px;
+        margin-left: 6rem;
+        margin-bottom: 1.2rem;
+    }
+    /* nav */
+    header ul.navigation{
+        display: none;
+    }
+    /* js nav */
+    .toggle{
+        margin: 5px auto;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url("#");
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    /* remove */
+    .toggle.active{
+        position: fixed;
+        right: 140px;
+        background: url("#");
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header ul.navigation.active{
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 60rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 10;
+    }
+    header ul.navigation.active li {
+        font-size: 1.5rem;
+        margin: 5px 0;
+    }
+
+    /* footer nav-bar */
+    section.footer{
+        height: 25%;
+    }
+    footer ul{
+        right: 1%;
+        margin: 0.1rem auto;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        height: 80%;
+        display: block;
+    }
+    footer ul li{
+        display: block;
+        text-align: center;
+        max-width: 100%;
+    }
+}

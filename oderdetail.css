@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* header */
+h1{
+    text-align: center;
+    margin: 0 auto 30px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+h1::after{
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.container-fluid{
+    border: 1px black solid;
+}
+
+/* row that contain product details and its images */
+#single-product .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* detail */
+/* divide 2 cols'space in detail row  */
+#single-product .row .col-md-3{
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 20px;
+}
+/* its images */
+#single-product .row .col-md-3 img{
+    width: 68%;
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+/* price */
+#single-product .row .col-md-3 h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+}
+
+#sta , #u-info, #price{
+    margin-top: 20px;
+    height: 8rem;
+}
+.small-container-fluid .row-2{
+    margin: 2px 20px 2px 0px;
+    width: 80%;
+    height: 5rem;
+
+}
+
+/* info */
+.small-container-fluid #info{
+    margin: 2px auto;
+    width: 100%;
+    height: 6rem;
+
+}
+.small-container-fluid #info .col-md-3{
+    width: 100%;
+}
+.small-container-fluid #info .col-md-3 *{
+    margin: 10px auto;
+}
+
+/* status */
+.small-container-fluid #status{
+    width: 100%;
+    margin: 2px 20px 2px 0px;
+    /* margin-bottom: 20px; */
+}
+.small-container-fluid #status .col-md-3 form{
+    width: 100%;
+    margin-bottom: 4px;
+}
+.small-container-fluid #status .col-md-3 form *{
+    margin-bottom: 5px;
+}
+

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px black solid; */
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+/* links */
+a {
+    text-decoration: none;
+    color: #000;
+  }
+
+/* heading */
+p {
+    color: #555;
+}
+
+.price-filter .row .col label{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+.categories{
+    margin: 30px 0;
+}
+
+.small-container-fluid {
+    max-width: 1500px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* title */
+.small-container-fluid h2.title{
+    text-align: center;
+    margin: 0 auto 30px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.small-container-fluid h2.title::after{
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* row */
+.small-container-fluid #top{
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    /* height: 55rem; */
+}
+.small-container-fluid #top div{
+    height: 15rem;
+    margin: 5px auto;
+}
+.small-container-fluid #top img{
+    width: 80%;
+    height: 15rem;
+    margin: 5px auto;
+}
+
+/* caution test animation! */
+.small-container-fluid .row div{
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+/* image */
+.small-container-fluid .row div a{
+    margin: 10px auto;
+    text-decoration: none;
+    color: #000;
+}
+.small-container-fluid .row a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.small-container-fluid .row div a img{
+    margin: 5px auto;
+    width: 15rem;
+    height: 15rem;
+}
+.small-container-fluid .row div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25rem;
+}
+/* product title */
+.small-container-fluid .row div h4{
+    color: #555;
+    font-weight: normal;
+}
+/* price */
+.small-container-fluid .row div p{
+    font-size: 14px;
+} 
